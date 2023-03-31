@@ -4,7 +4,7 @@ import org.web.model.User;
 
 import java.util.List;
 
-public interface UserDaoService {
+public interface UserService {
 
     void add(User user);
 
