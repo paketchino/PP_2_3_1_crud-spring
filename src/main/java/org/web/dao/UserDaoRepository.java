@@ -12,7 +12,8 @@ public interface UserDaoRepository {
 
     void update(User user);
 
-    void delete(Long id);
+    void delete(User user);
 
     User findUserById(Long id);
+
 }

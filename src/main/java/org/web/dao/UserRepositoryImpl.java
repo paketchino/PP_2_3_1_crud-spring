@@ -24,26 +24,17 @@ public class UserRepositoryImpl implements UserDaoRepository {
 
     @Override
     public void update(User user) {
-        entityManager.createQuery("update User as u set u.login =:login, u.firstName =:firstName," +
-                        " u.secondName =: secondName where u.id =: id")
-                .setParameter("login", user.getLogin())
-                .setParameter("firstName", user.getFirstName())
-                .setParameter("secondName", user.getSecondName())
-                .setParameter("id", user.getId())
-                .executeUpdate();
+        entityManager.merge(user);
     }
 
     @Override
-    public void delete(Long id) {
-        entityManager.createQuery("delete from User as u where u.id =: id")
-                .setParameter("id", id).executeUpdate();
+    public void delete(User user) {
+        entityManager.remove(user);
     }
 
     @Override
     public User findUserById(Long id) {
-        return entityManager.createQuery("from User as u where u.id =:id", User.class)
-                .setParameter("id", id)
-                .getSingleResult();
+        return entityManager.find(User.class, id);
     }
 
 }

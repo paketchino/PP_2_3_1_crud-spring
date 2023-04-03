@@ -43,8 +43,8 @@ public class UserController {
     }
 
     @PostMapping("/postDeleteUser")
-    public String postDeleteUser(@RequestParam("id") Long id) {
-        userService.delete(id);
+    public String postDeleteUser(@ModelAttribute User user) {
+        userService.delete(user);
         return "redirect:/getAllUsers";
     }
 
