@@ -1,7 +1,6 @@
 package org.web.service;
 
 import org.jboss.logging.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.web.dao.UserDaoRepository;
@@ -16,7 +15,7 @@ public class UserServiceImpl implements UserService {
 
     private static Logger logger = Logger.getLogger(UserServiceImpl.class);
 
-    public UserServiceImpl(@Autowired UserDaoRepository userDaoRepository) {
+    public UserServiceImpl(UserDaoRepository userDaoRepository) {
         this.userDaoRepository = userDaoRepository;
     }
 

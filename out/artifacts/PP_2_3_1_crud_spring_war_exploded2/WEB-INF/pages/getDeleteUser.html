@@ -7,7 +7,7 @@
 <body>
 <div class="card-body">
     <form th:action="@{/postDeleteUser}" method="POST">
-        <input type="hidden" name="id" th:field="*{id}"/>
+        <input type="hidden" name="id" th:object="*{user}"/>
         <button type="submit" class="btn btn-primary">Удалить</button>
     </form>
 </div>

@@ -13,8 +13,8 @@ public class User {
     @NotNull
     private Long id;
 
-    @Column(name = "login", unique = true)
     @NonNull
+    @Column(name = "login", unique = true, nullable = false)
     private String login;
 
     @Column(name = "password")

@@ -12,6 +12,7 @@
             <th scope="col">First Name</th>
             <th scope="col">Login</th>
             <th scope="col">Second Name</th>
+            <th scope="col">Password</th>
         </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 </a>
             </td>
             <td th:text="${user.getSecondName()}"></td>
+            <td th:text="${user.password}"></td>
         </tr>
         <a th:href="@{|getAddUser|}">
             <button type="submit" name="submit_button" value="main_button">

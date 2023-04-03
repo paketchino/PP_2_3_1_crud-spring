@@ -24,7 +24,7 @@ public class ConfigDB {
 
     private final Environment environment;
 
-    public ConfigDB(@Autowired Environment environment) {
+    public ConfigDB(Environment environment) {
         this.environment = environment;
     }
 
