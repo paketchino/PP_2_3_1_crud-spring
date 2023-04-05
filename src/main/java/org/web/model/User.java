@@ -2,6 +2,7 @@ package org.web.model;
 
 import com.sun.istack.NotNull;
 import org.springframework.lang.NonNull;
+
 import javax.persistence.*;
 
 @Entity

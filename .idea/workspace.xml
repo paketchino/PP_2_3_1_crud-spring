@@ -10,20 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8cc225f-0cf3-454c-a8af-e1ace9fb1aae" name="Changes" comment="Fix">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/839d5274-a537-4e74-a576-7ab51bec8127.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/839d5274-a537-4e74-a576-7ab51bec8127.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserDaoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserDaoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/AppInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/AppInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/ConfigDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/ConfigDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/WebConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getAllUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getAllUsers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getDeleteUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getDeleteUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getUpdateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getUpdateUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/AppInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/config/AppInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/ConfigDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/config/ConfigDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/dao/UserRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/dao/UserRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +89,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rompe/IdeaProjects/car-accident",
+    "last_opened_file_path": "C:/Users/rompe/Downloads/PP_2_3_1_crud-spring/src/main/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,6 +108,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rompe\Downloads\PP_2_3_1_crud-spring\src\main\java" />
+      <recent name="C:\Users\rompe\Downloads\PP_2_3_1_crud-spring\src\main\java\org\web" />
       <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -223,6 +226,7 @@
       <workItem from="1680351998069" duration="2397000" />
       <workItem from="1680422139472" duration="2126000" />
       <workItem from="1680507523107" duration="6642000" />
+      <workItem from="1680714846985" duration="2774000" />
     </task>
     <task id="LOCAL-00001" summary="PP_2_3_1 CRUD INITIAL COMMIT">
       <created>1680015044661</created>
