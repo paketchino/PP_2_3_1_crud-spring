@@ -9,21 +9,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8cc225f-0cf3-454c-a8af-e1ace9fb1aae" name="Changes" comment="Fix">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/web/CrudApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/web/dao/UserDaoImpl.java" afterDir="false" />
+    <list default="true" id="f8cc225f-0cf3-454c-a8af-e1ace9fb1aae" name="Changes" comment="3.3.1_CRUD_PP">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/web/util/UserValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/db.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/AppInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/ConfigDB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserDaoRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/dao/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/classes/org/web/service/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/FastInfoset-1.2.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/byte-buddy-1.11.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/hibernate-core-5.6.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/jandex-2.2.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/jaxb-api-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/jaxb-runtime-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/jboss-logging-3.4.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/mysql-connector-java-8.0.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-aop-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-beans-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-context-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-core-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-expression-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-jcl-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-jdbc-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-orm-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-tx-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-web-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/spring-webmvc-5.3.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/stax-ex-1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/thymeleaf-3.0.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/thymeleaf-spring5-3.0.14.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getAddUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/getAddUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getAllUsers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/getAllUsers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getDeleteUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/getDeleteUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/PP_2_3_1_crud_spring_war_exploded2/WEB-INF/pages/getUpdateUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/getUpdateUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/CrudApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/CrudApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/AppInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/config/AppInt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/ConfigDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/config/ConfigDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/config/WebConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/dao/UserDaoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/dao/UserDaoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/dao/UserRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/web/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/web/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/web/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/getAddUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/getAllUsers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/getDeleteUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webapp/WEB-INF/pages/getUpdateUser.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +91,7 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="boot-branch" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,7 +141,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/rompe/IdeaProjects/demo",
+    "last_opened_file_path": "C:/Users/rompe/IdeaProjects/car-accident",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,11 +163,11 @@
       <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rompe\Downloads\PP_2_3_1_crud-spring\src\main\resources\templates" />
+      <recent name="C:\Users\rompe\Downloads\PP_2_3_1_crud-spring\src\main\resources\" />
+      <recent name="C:\Users\rompe\Downloads\PP_2_3_1_crud-spring\src\main\resources" />
       <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\webapp\WEB-INF\pages" />
       <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src" />
-      <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\main\java\webapp\WEB-INF" />
-      <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\main\java\webapp" />
-      <recent name="C:\Users\rompe\IdeaProjects\PP_2_3_1_crud-spring\src\main" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680523247707</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="3.3.1_CRUD_PP">
+      <created>1680781367857</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680781367857</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +301,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="boot-branch" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -255,6 +323,7 @@
     <MESSAGE value="PP_2_3_1 CRUD INITIAL COMMIT 1" />
     <MESSAGE value="PP_2_3_1 CRUD INITIAL COMMIT" />
     <MESSAGE value="Fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
+    <MESSAGE value="3.3.1_CRUD_PP" />
+    <option name="LAST_COMMIT_MESSAGE" value="3.3.1_CRUD_PP" />
   </component>
 </project>

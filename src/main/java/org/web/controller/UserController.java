@@ -2,20 +2,27 @@ package org.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.web.model.User;
 import org.web.service.UserService;
+import org.web.util.UserValidator;
+
+import javax.validation.Valid;
 
 @Controller
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
-    public UserController(UserService userService) {
+    private final UserValidator userValidator;
+
+    public UserController(UserService userService, UserValidator userValidator) {
         this.userService = userService;
+        this.userValidator = userValidator;
     }
 
     @GetMapping("/getAllUsers")
@@ -30,7 +37,11 @@ public class UserController {
     }
 
     @PostMapping("/addUser")
-    public String postAddUser(@ModelAttribute User user) {
+    public String postAddUser(@Valid @ModelAttribute User user, BindingResult bindingResult) {
+        userValidator.validate(user, bindingResult);
+        if (bindingResult.hasErrors()) {
+            return "redirect:/getAddUser";
+        }
         userService.save(user);
         return "redirect:/getAllUsers";
     }
@@ -49,12 +60,12 @@ public class UserController {
 
     @GetMapping("/getUpdateUser")
     public String getUpdateUser(@RequestParam("id") Long id, Model model) {
-        model.addAttribute("user", userService.findById(id));
+        model.addAttribute("user", userService.findById(id).get());
         return "getUpdateUser";
     }
 
     @PostMapping("/updateUser")
-    public String postUpdateUser(@ModelAttribute User user) {
+    public String postUpdateUser(@ModelAttribute @Valid User user) {
         userService.update(user);
         return "redirect:/getAllUsers";
     }

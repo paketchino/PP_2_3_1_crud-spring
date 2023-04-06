@@ -1,13 +1,10 @@
 package org.web.config;
 
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import org.web.CrudApplication;
-
 import javax.servlet.*;
-import java.util.EnumSet;
 
 public class AppInt extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
@@ -53,14 +50,9 @@ public class AppInt extends AbstractAnnotationConfigDispatcherServletInitializer
     }
 
     private void registerCharacterEncodingFilter(ServletContext context) {
-        EnumSet<DispatcherType> dispatcherTypes = EnumSet.of(DispatcherType.REQUEST, DispatcherType.FORWARD);
-
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
 
-        FilterRegistration.Dynamic characterEncoding = context.addFilter("characterEncoding",
-                characterEncodingFilter);
-        characterEncoding.addMappingForUrlPatterns(dispatcherTypes, true, "/*");
     }
 }

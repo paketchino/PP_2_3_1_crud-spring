@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void update(User user) {
         logger.info("Начата операция обновления пользователя");
-        userDaoRepository.update(user);
+        userDaoRepository.save(user);
     }
 
     @Transactional
