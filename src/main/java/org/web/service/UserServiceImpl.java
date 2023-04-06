@@ -2,11 +2,12 @@ package org.web.service;
 
 import org.jboss.logging.Logger;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 import org.web.dao.UserDaoRepository;
 import org.web.model.User;
 
+import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -21,9 +22,9 @@ public class UserServiceImpl implements UserService {
 
     @Transactional
     @Override
-    public void add(User user) {
+    public User save(User user) {
         logger.info("Начата операция добавления");
-        userDaoRepository.add(user);
+        return userDaoRepository.save(user);
     }
 
     @Override
@@ -47,7 +48,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User findById(Long id) {
+    public Optional<User> findById(Long id) {
         logger.info("Начата операция поиска по id");
         return userDaoRepository.findUserById(id);
     }

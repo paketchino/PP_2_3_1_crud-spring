@@ -3,10 +3,11 @@ package org.web.service;
 import org.web.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
-    void add(User user);
+    User save(User user);
 
     List<User> getAllUser();
 
@@ -14,5 +15,5 @@ public interface UserService {
 
     void delete(User user);
 
-    User findById(Long id);
+    Optional<User> findById(Long id);
 }

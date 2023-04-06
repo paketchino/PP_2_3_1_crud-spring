@@ -1,19 +1,24 @@
 package org.web.dao;
 
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 import org.web.model.User;
 
 import java.util.List;
+import java.util.Optional;
 
-public interface UserDaoRepository {
+public interface UserDaoRepository extends CrudRepository<User, Long> {
 
-    void add(User user);
+    User save(User user);
 
+    @Query("from User")
     List<User> getAllUser();
 
     void update(User user);
 
     void delete(User user);
 
-    User findUserById(Long id);
+    Optional<User> findUserById(Long id);
 
 }
