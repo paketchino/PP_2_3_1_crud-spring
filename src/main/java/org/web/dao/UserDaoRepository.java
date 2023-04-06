@@ -8,6 +8,7 @@ import org.web.model.User;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public interface UserDaoRepository extends CrudRepository<User, Long> {
 
     User save(User user);

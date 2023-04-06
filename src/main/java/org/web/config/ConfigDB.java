@@ -24,7 +24,7 @@ public class ConfigDB {
         LocalContainerEntityManagerFactoryBean factory
                 = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("car.accident");
+        factory.setPackagesToScan("org.web");
         factory.setDataSource(ds);
         return factory;
     }
